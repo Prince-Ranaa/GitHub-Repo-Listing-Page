@@ -1,0 +1,32 @@
+.container {
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.container .first {
+    margin-right: 30px;
+}
+
+
+.img-container {
+    margin: 0 auto;
+    align-items: center;
+}
+
+.img-container img {
+    width: 150px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+    border: 1px solid rgba(0, 0, 0, 0.28);
+    padding: 3px;
+}
+
+.git-link {
+    color: black;
+    text-decoration: none;
+}
+
+.git-link:hover {
+    color: blue;
+}

@@ -1,0 +1,23 @@
+<form (submit)="getUserDetails()" class="container">
+    <div class="form-container">
+        <h3>Search GitHub Profile</h3>
+        <div class="d-flex">
+
+            <input name="user" [(ngModel)]="username" class="form-control" placeholder="Enter GitHub Username">
+
+
+            <input type="submit" class="btn btn-primary" value="Search">
+        </div>
+    </div>
+</form>
+
+<ng-container *ngIf="gitUserDetails">
+    <app-user-details [userDetails]="gitUserDetails"></app-user-details>
+    <app-pagination [userRepo]="gitUserRepo" [page]="page"></app-pagination>
+</ng-container>
+
+<ngx-spinner type="line-scale-party">
+    <div class="spinner-border text-light" role="status">
+        <span class="visually-hidden">Loading...</span>
+    </div>
+</ngx-spinner>

@@ -1,0 +1,13 @@
+.pagi-container {
+    margin-bottom: 10px;
+
+}
+
+.pagination {
+    position: relative;
+    right: 35%;
+    left: 35%;
+    font-size: 14px;
+    display: inline-block;
+
+}

@@ -1,0 +1,18 @@
+<div class="container">
+    <section class="first">
+        <div class="img-container">
+            <img [src]="userDetails.avatar_url" alt="">
+        </div>
+        <i class="bi bi-link mx-2"></i><a [href]="userDetails.html_url" target="_blank"
+            class="git-link">{{userDetails.html_url}}</a>
+    </section>
+
+
+    <section class="second">
+        <h3 class="name">{{userDetails.name}}</h3>
+        <p class="bio">Bio : {{userDetails.bio}}</p>
+
+        <p class="location"> <i class="bi bi-geo-alt-fill"></i> {{userDetails.location}}</p>
+        <p>twitter : {{userDetails.twitter_username}}</p>
+    </section>
+</div>

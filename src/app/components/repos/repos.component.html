@@ -1,0 +1,11 @@
+<div class="repo-container container">
+    <div *ngFor="let repo of userRepo | paginate:{
+              itemsPerPage: itemsPerPage,
+              currentPage: page,
+              totalItems: totalItems
+            }" class="repo">
+        <h5 class="repo-name">{{repo.name}}</h5>
+        <p>{{repo.description}}</p>
+        <p>Repo Link : <a [href]="repo.html_url" class="repo-link" target="_blank">{{repo.html_url}}</a></p>
+    </div>
+</div>
